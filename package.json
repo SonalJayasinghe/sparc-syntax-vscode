@@ -1,0 +1,25 @@
+{
+  "name": "sparc-syntax",
+  "displayName": "SPARC Syntax",
+  "description": "Syntax highlighting for SPARC language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "sparc",
+      "aliases": ["SPARC", "sparc"],
+      "extensions": [".sp"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "sparc",
+      "scopeName": "source.sparc",
+      "path": "./syntaxes/sparc.tmLanguage.json"
+    }]
+  }
+}
