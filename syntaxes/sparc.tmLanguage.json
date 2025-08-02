@@ -9,7 +9,9 @@
 		{"include": "#comments"},
 		{"include": "#logics_relations"},
 		{"include": "#function_records"},
-		{"include": "#negation_predicate"}
+		{"include": "#negation_predicate"},
+		{"include": "#arithmatics"}
+
 
 	],
 	"repository": {
@@ -109,6 +111,14 @@
 				{
 				"name": "entity.negated-predicate.sparc",
 				"match": "-[a-z][a-zA-Z0-9_]*\\s*(?=\\()"
+		}
+		]
+		},
+		"arithmatics": {
+			"patterns": [
+				{
+				"name": "keyword.operator.arithmetic.sparc",
+				"match": "(\\+|\\-|\\*|\\/)"
 		}
 		]
 		}
