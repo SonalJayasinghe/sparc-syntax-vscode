@@ -2,7 +2,10 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "SPARC",
 	"patterns": [
-		{"include": "#directives"}
+		{"include": "#directives"},
+		{"include": "#sorts"},
+		{"include": "#predicates"}
+
 	],
 	"repository": {
 		"directives": {
@@ -20,7 +23,34 @@
   				"match": "\\b\\d+\\b"
 			}
 		]
+		},
+
+		"sorts": {
+			"patterns": [
+			{
+				"name": "keyword.sorts.section.sparc",
+				"match": "\\bsorts\\b"
+			},
+			{
+  				"name": "keyword.sort.declaration.sparc",
+  				"match": "#[a-zA-Z_][a-zA-Z0-9_]*"
+			}
+		]
+		},
+
+		"predicates": {
+			"patterns": [
+			{
+				"name": "keyword.predicates.section.sparc",
+				"match": "\\predicates\\b"
+			},
+			{
+  				"name": "keyword.predicates.declaration.sparc",
+  				"match": "\\b[a-z][a-zA-Z0-9_]*\\s*(?=\\()"
+			}
+		]
 		}
+
 
 
 	},
