@@ -1,0 +1,12 @@
+{
+  "$schema": "vscode://schemas/color-theme",
+  "name": "SPARC Dark",
+  "type": "dark",
+  "tokenColors": [
+
+    {
+      "scope": "comment.line.sparc",
+      "settings": { "foreground": "#95de73", "fontStyle": "italic" }
+    }
+  ]
+}
