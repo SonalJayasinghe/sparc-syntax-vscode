@@ -6,7 +6,10 @@
 		{"include": "#sorts"},
 		{"include": "#predicates"},
 		{"include": "#rules"},
-		{"include": "#comments"}
+		{"include": "#comments"},
+		{"include": "#logics_relations"},
+		{"include": "#function_records"}
+		
 
 
 
@@ -73,10 +76,6 @@
 				"match": "\\bnot\\b"
 			},
 			{
-				"name": "keyword.operator.nigation.sparc",
-				"match": "-"
-			},
-			{
 				"name": "keyword.operator.comma.sparc",
 				"match": ","
 			}
@@ -88,6 +87,23 @@
 				"name": "comment.line.sparc",
 				"match": "%.*$"
 			}
+		]
+		},
+
+		"logics_relations": {
+			"patterns": [
+				{
+				"name": "keyword.operator.logical.sparc",
+				"match": "(=|!=|<=|<)"
+		}
+		]
+		},
+		"function_records": {
+			"patterns": [
+				{
+				"name": "entity.predicate.sparc",
+  				"match": "\\b[a-z][a-zA-Z0-9_]*\\s*(?=\\()"
+		}
 		]
 		}
 
