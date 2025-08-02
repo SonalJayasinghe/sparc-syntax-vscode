@@ -2,15 +2,27 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "SPARC",
 	"patterns": [
-		{"include": "#keywords"}
+		{"include": "#directives"}
 	],
 	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.sparc",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+		"directives": {
+			"patterns": [
+			{
+				"name": "keyword.directive.sparc",
+				"match": "#(const|maxint)\\b"
+			},
+			{
+  				"name": "variable.parameter.sparc",
+  				"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+			},
+			{
+  				"name": "constant.numeric.sparc",
+  				"match": "\\b\\d+\\b"
+			}
+		]
 		}
+
+
 	},
 	"scopeName": "source.sparc"
 }
