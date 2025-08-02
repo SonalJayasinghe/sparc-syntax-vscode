@@ -11,8 +11,6 @@
 		{"include": "#function_records"},
 		{"include": "#negation_predicate"},
 		{"include": "#arithmatics"}
-
-
 	],
 	"repository": {
 		"directives": {
@@ -122,9 +120,6 @@
 		}
 		]
 		}
-
-
-
 	},
 	"scopeName": "source.sparc"
 }
