@@ -20,6 +20,18 @@
       "language": "sparc",
       "scopeName": "source.sparc",
       "path": "./syntaxes/sparc.tmLanguage.json"
-    }]
+    }],
+    "themes": [
+      {
+        "label": "SPARC Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sparc-dark.json"
+      },
+      {
+        "label": "SPARC Light",
+        "uiTheme": "vs",
+        "path": "./themes/sparc-light.json"
+      }
+    ]
   }
 }
