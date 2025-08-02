@@ -47,7 +47,7 @@
 			"patterns": [
 			{
 				"name": "keyword.predicates.section.sparc",
-				"match": "\\predicates\\b"
+				"match": "\\bpredicates\\b"
 			},
 			{
   				"name": "keyword.predicates.declaration.sparc",
