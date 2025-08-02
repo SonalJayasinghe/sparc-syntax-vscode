@@ -4,7 +4,11 @@
 	"patterns": [
 		{"include": "#directives"},
 		{"include": "#sorts"},
-		{"include": "#predicates"}
+		{"include": "#predicates"},
+		{"include": "#rules"},
+		{"include": "#comments"}
+
+
 
 	],
 	"repository": {
@@ -47,6 +51,42 @@
 			{
   				"name": "keyword.predicates.declaration.sparc",
   				"match": "\\b[a-z][a-zA-Z0-9_]*\\s*(?=\\()"
+			}
+		]
+		},
+		"rules": {
+			"patterns": [
+			{
+				"name": "keyword.rules.section.sparc",
+				"match": "\\brules\\b"
+			},
+			{
+				"name": "keyword.operator.rule.sparc",
+				"match": ":-"
+			},
+			{
+				"name": "keyword.operator.cr-rule.sparc",
+				"match": ":[+]"
+			},
+			{
+				"name": "keyword.operator.not.sparc",
+				"match": "\\bnot\\b"
+			},
+			{
+				"name": "keyword.operator.nigation.sparc",
+				"match": "-"
+			},
+			{
+				"name": "keyword.operator.comma.sparc",
+				"match": ","
+			}
+		]
+		},
+		"comments": {
+			"patterns": [
+			{
+				"name": "comment.line.sparc",
+				"match": "%.*$"
 			}
 		]
 		}
