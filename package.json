@@ -3,7 +3,7 @@
   "displayName": "SPARC Syntax",
   "description": "Syntax highlighting for SPARC language",
   "version": "1.0.0",
-  "publisher": "Sonal Jayasinghe",
+  "publisher": "sonaljayasinghe",
   "engines": {
     "vscode": "^1.102.0"
   },
