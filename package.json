@@ -2,12 +2,13 @@
   "name": "sparc-syntax",
   "displayName": "SPARC Syntax",
   "description": "Syntax highlighting for SPARC language",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "publisher": "Sonal Jayasinghe",
   "engines": {
     "vscode": "^1.102.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages", "Themes"
   ],
   "contributes": {
     "languages": [{
