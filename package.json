@@ -10,6 +10,10 @@
   "categories": [
     "Programming Languages", "Themes"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SonalJayasinghe/sparc-syntax-vscode.git"
+  },
   "contributes": {
     "languages": [{
       "id": "sparc",
